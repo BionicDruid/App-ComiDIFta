@@ -71,7 +71,7 @@ class Asistencia : Fragment() {
             scanner.startScan()
                 .addOnSuccessListener { barcode ->
                     println(barcode.rawValue.toString())
-                    println("E")
+                    var recibido = barcode.rawValue.toString()
 
                     //val jsonData = Gson().fromJson(barcode.rawValue, ComensalQR::class.java)
                     val sharedPref = PreferenceManager.getDefaultSharedPreferences(context)
@@ -83,7 +83,7 @@ class Asistencia : Fragment() {
 
                     val infoAsistencia = ParseAsistenciaComensalReq(
                         idJornada = sharedPref.getString("idJornada", "default value")!!,
-                        llaveUnica = "LlaveAsistencia",
+                        llaveUnica = (recibido.split("="))[2].substring(0, 18),
                         idEncargado = sharedPref.getString("idMiembro", "default value")!!,
                         aportacion = aportacion
                     )
