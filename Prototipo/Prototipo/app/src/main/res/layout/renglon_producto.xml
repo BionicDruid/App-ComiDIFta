@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="false"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvNoRenglon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        tools:text="No. 1" />
+
+    <Button
+        android:id="@+id/btnProducto"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_margin="0dp"
+        android:layout_weight="4"
+        android:text="Button"
+        android:textAlignment="center"
+        android:textColorHighlight="#565F91"
+        android:textColorHint="#565F91"
+        android:textColorLink="#565F91"
+        android:textSize="8sp"
+        app:cornerRadius="3dp"
+        app:rippleColor="#565F91"
+        app:strokeColor="#565F91" />
+
+    <TextView
+        android:id="@+id/tvCategoriaRenglon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        tools:text="Aceite" />
+
+    <TextView
+        android:id="@+id/tvCantidadRenglon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="2"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        tools:text="30 lts" />
+
+    <TextView
+        android:id="@+id/tvCaducidadRenglon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        tools:text="21/10/23" />
+</LinearLayout>

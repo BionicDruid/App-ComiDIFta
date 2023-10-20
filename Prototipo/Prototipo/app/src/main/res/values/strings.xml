@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Prototipo</string>
+
+    <string-array name="cargo">
+        <item>Administrador</item>
+        <item>Voluntario</item>
+    </string-array>
+
+    <string-array name="categorias">
+        <item>Fruta</item>
+        <item>Aceite</item>
+        <item>Lácteo</item>
+        <item>Carne</item>
+        <item>Vegetal</item>
+        <item>Condimento</item>
+        <item>Bebible</item>
+        <item>Pasta</item>
+        <item>Leguminosa</item>
+        <item>Semilla</item>
+        <item>Enlatado</item>
+        <item>Masa</item>
+    </string-array>
+
+    <string-array name="unidad">
+        <item>lt.</item>
+        <item>kg.</item>
+    </string-array>
+
+</resources>

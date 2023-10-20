@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login2">
+
+    <fragment
+        android:id="@+id/fechaComensal2"
+        android:name="mx.psl.prototipo.view.FechaComensal"
+        android:label="registro_comensal"
+        tools:layout="@layout/registro_comensal" />
+    <fragment
+        android:id="@+id/fechaCaducidad"
+        android:name="mx.psl.prototipo.view.FechaCaducidad"
+        android:label="registro_lote"
+        tools:layout="@layout/registro_lote" />
+    <fragment
+        android:id="@+id/asistencia"
+        android:name="mx.psl.prototipo.view.Asistencia"
+        android:label="registro_asistencia"
+        tools:layout="@layout/registro_asistencia" />
+    <fragment
+        android:id="@+id/login2"
+        android:name="mx.psl.prototipo.view.Login"
+        android:label="login"
+        tools:layout="@layout/login" >
+        <action
+            android:id="@+id/action_login2_to_menuAdmin"
+            app:destination="@id/menuAdmin" />
+        <action
+            android:id="@+id/action_login2_to_menuVolun"
+            app:destination="@id/menuVolun" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuAdmin"
+        android:name="mx.psl.prototipo.view.MenuAdmin"
+        android:label="menu_administrador"
+        tools:layout="@layout/menu_administrador" >
+        <action
+            android:id="@+id/action_menuAdmin_to_fechaCaducidad"
+            app:destination="@id/fechaCaducidad" />
+        <action
+            android:id="@+id/action_menuAdmin_to_asistencia"
+            app:destination="@id/asistencia" />
+        <action
+            android:id="@+id/action_menuAdmin_to_fechaComensal2"
+            app:destination="@id/fechaComensal2" />
+        <action
+            android:id="@+id/action_menuAdmin_to_miembroNuevo"
+            app:destination="@id/miembroNuevo" />
+        <action
+            android:id="@+id/action_menuAdmin_to_inventario"
+            app:destination="@id/inventario" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuVolun"
+        android:name="mx.psl.prototipo.view.MenuVolun"
+        android:label="menu_voluntario"
+        tools:layout="@layout/menu_voluntario" >
+        <action
+            android:id="@+id/action_menuVolun_to_fechaCaducidad"
+            app:destination="@id/fechaCaducidad" />
+        <action
+            android:id="@+id/action_menuVolun_to_asistencia"
+            app:destination="@id/asistencia" />
+        <action
+            android:id="@+id/action_menuVolun_to_fechaComensal2"
+            app:destination="@id/fechaComensal2" />
+        <action
+            android:id="@+id/action_menuVolun_to_inventario"
+            app:destination="@id/inventario" />
+    </fragment>
+    <fragment
+        android:id="@+id/miembroNuevo"
+        android:name="mx.psl.prototipo.view.MiembroNuevo"
+        android:label="registro_miembro"
+        tools:layout="@layout/registro_miembro" />
+    <fragment
+        android:id="@+id/inventario"
+        android:name="mx.psl.prototipo.view.Inventario"
+        android:label="ver_inventario"
+        tools:layout="@layout/ver_inventario" >
+        <action
+            android:id="@+id/action_inventario_to_loteVisualizado2"
+            app:destination="@id/loteVisualizado" />
+    </fragment>
+    <fragment
+        android:id="@+id/loteVisualizado"
+        android:name="mx.psl.prototipo.view.LoteVisualizado"
+        android:label="ver_lote"
+        tools:layout="@layout/ver_lote" />
+</navigation>
